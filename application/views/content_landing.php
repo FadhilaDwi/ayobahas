@@ -11,7 +11,7 @@
 
         <!-- Buttons -->
         <div>
-            <a href="#" class="btn btn-rounded btn-xl btn-primary m-x-1">Join Us</a>
+            <a href="<?php echo base_url('Login') ?>" class="btn btn-rounded btn-xl btn-primary m-x-1">Join Us</a>
             <a href="#" class="btn btn-xl btn-outline btn-outline-colorless-inverted btn-rounded m-x-1">
                 Learn More
             </a>

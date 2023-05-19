@@ -64,13 +64,8 @@
   |
   =============================================================================== -->
 
- <!-- jQuery -->
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
- <!-- Core scripts -->
  <script src="<?php echo base_url("assets/js/bootstrap.min.js") ?>"></script>
  <script src="<?php echo base_url("assets/js/pixeladmin.min.js") ?>"></script>
-
  <!-- Landing page dependencies -->
  <script src="<?php echo base_url("assets/js/jquery.waypoints.min.js") ?>"></script>
  <script src="<?php echo base_url("assets/js/jquery.scrollTo.min.js") ?>"></script>
