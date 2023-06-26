@@ -10,10 +10,9 @@
   =============================================================================== -->
 
 <!-- jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/pixeladmin.min.js"></script>
+<script src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/pixeladmin.min.js') ?>"></script>
 
 <script>
     // -------------------------------------------------------------------------
@@ -24,6 +23,8 @@
 
         $('#px-demo-sidebar').pxSidebar();
         pxDemo.initializeDemo();
+
+
     });
 </script>
 
@@ -33,7 +34,6 @@
 
     $(function() {
         var file = String(document.location).split('/').pop();
-
         // Remove unnecessary file parts
         file = file.replace(/(\.html).*/i, '$1');
 

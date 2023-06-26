@@ -26,4 +26,10 @@ class Login extends CI_Controller
         );
         $this->load->view('layout/login/template', $data);
     }
+
+    public function aksi_login()
+    {
+        return $this->index();
+        # code...
+    }
 }

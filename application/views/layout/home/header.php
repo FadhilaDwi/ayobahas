@@ -29,9 +29,9 @@
 
     <!-- DEMO ONLY: Load PixelAdmin core stylesheets -->
     <script>
-        _pxDemo_loadStylesheet('assets/css/bootstrap.min.css', 'px-demo-stylesheet-bs');
-        _pxDemo_loadStylesheet('assets/css/pixeladmin.min.css', 'px-demo-stylesheet-core');
-        _pxDemo_loadStylesheet('assets/css/widgets.min.css', 'px-demo-stylesheet-widgets');
+        _pxDemo_loadStylesheet("<?php echo base_url('assets/css/bootstrap.min.css') ?>", 'px-demo-stylesheet-bs');
+        _pxDemo_loadStylesheet("<?php echo base_url('assets/css/pixeladmin.min.css') ?>", 'px-demo-stylesheet-core');
+        _pxDemo_loadStylesheet("<?php echo base_url('assets/css/widgets.min.css') ?>", 'px-demo-stylesheet-widgets');
     </script>
 
     <!-- DEMO ONLY: Load theme -->
@@ -40,20 +40,19 @@
             var b = decodeURIComponent((new RegExp(";\\s*" + encodeURIComponent("px-demo-theme") + "\\s*=\\s*([^;]+)\\s*;", "g").exec(";" + document.cookie + ";") || [])[1] || "clean");
             _pxDemo_loadStylesheet(a + b + ".min.css", "px-demo-stylesheet-theme", b)
         }
-        _pxDemo_loadTheme('assets/css/themes/');
+        _pxDemo_loadTheme("<?php echo base_url('assets/css/themes/') ?>");
     </script>
 
     <!-- Demo assets -->
     <script>
-        _pxDemo_loadStylesheet('assets/demo/demo.css');
+        _pxDemo_loadStylesheet("<?php echo base_url('assets/demo/demo.css') ?>");
     </script>
     <!-- / Demo assets -->
 
     <!-- holder.js -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.9.0/holder.js"></script>
-
+    <script src="<?php echo base_url("assets/js/jquery.3.2.1.js") ?>"></script>
     <!-- Pace.js -->
-    <script src="assets/pace/pace.min.js"></script>
+    <script src="<?php echo base_url('assets/pace/pace.min.js') ?>"></script>
 
-    <script src="assets/demo/demo.js"></script>
+    <script src="<?php echo base_url('assets/demo/demo.js') ?>"></script>
 </head>

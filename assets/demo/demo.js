@@ -155,7 +155,6 @@
     function _createStylesheetLink(href, className, cb) {
       var head = document.getElementsByTagName('head')[0];
       var link = document.createElement('link');
-
       link.className = className;
       link.type      = 'text/css';
       link.rel       = 'stylesheet';

@@ -20,18 +20,17 @@
                     <div class="box-cell col-md-7">
 
                         <!-- Sign In form -->
-
-                        <form action="index.html" class="p-a-4" id="page-signin-form">
+                        <form method="post" action="<?php echo base_url('Login/aksi_login') ?>" class="p-a-4" id="page-signin-form">
                             <h4 class="m-t-0 m-b-4 text-xs-center font-weight-semibold">Sign In to your Account</h4>
 
                             <fieldset class="page-signin-form-group form-group form-group-lg">
                                 <div class="page-signin-icon text-muted"><i class="ion-person"></i></div>
-                                <input type="text" class="page-signin-form-control form-control" placeholder="Username or Email">
+                                <input name="username" type="text" class="page-signin-form-control form-control" placeholder="Username or Email">
                             </fieldset>
 
                             <fieldset class="page-signin-form-group form-group form-group-lg">
                                 <div class="page-signin-icon text-muted"><i class="ion-asterisk"></i></div>
-                                <input type="password" class="page-signin-form-control form-control" placeholder="Password">
+                                <input type="password" name="password" class="page-signin-form-control form-control" placeholder="Password">
                             </fieldset>
 
                             <div class="clearfix">
